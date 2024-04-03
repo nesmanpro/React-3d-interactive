@@ -8,8 +8,8 @@ function NavBar() {
             <ul className='h-full flex gap-7 font-bold text-black cursor-pointer '>
                 <li className="hover:text-pink-700 transition-all ease-in-out duration-300"><Link to="/">Home</Link>
                 </li>
-                <li ><Link to="/bottle" className="hover:text-pink-700">Bottle</Link></li>
-                <li className="hover:text-pink-700">About Me</li>
+                <Link to="/bottle" className="hover:text-pink-700">Bottle</Link>
+                <Link to="/aboutme" className="hover:text-pink-700">About Me</Link>
                 <li className="hover:text-pink-700">Contact</li>
             </ul>
         </div>

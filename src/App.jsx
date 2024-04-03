@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
-import NavBar from "./components/NavBar";
 import { Bottle } from "./components/Bottle";
+import NavBar from "./components/NavBar";
+import AboutMe from "./components/AboutMe";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Header />} />
         <Route exact path='/bottle' element={<Bottle />} />
+        <Route exact path='/aboutme' element={<AboutMe />} />
 
       </Routes>
 
