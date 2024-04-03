@@ -38,7 +38,7 @@ const AboutMe = () => {
 
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <Link
-                            className="cursor-pointer drop-shadow-md rounded-full hover:bg-arenaClaro px-6 py-2.5 text-sm font-semibold hover:text-azulOscuro border-2 border-arenaClaro text-arenaClaro shadow-sm bg-transparent transition hover:duration-500 ease-in-out"
+                            className="cursor-pointer drop-shadow-md rounded-full hover:bg-pink px-6 py-2.5 text-sm font-semibold hover:text-white border-2 border-pink text-pink shadow-sm bg-transparent transition hover:duration-500 ease-in-out"
                             to="/"
                             spy={true}
                             smooth={true}
