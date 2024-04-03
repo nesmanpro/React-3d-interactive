@@ -20,7 +20,7 @@ const AboutMe = () => {
                         <h1 className="drop-shadow-md  pt-10 text-3xl font-bold tracking-normal text-pink text-center sm:text-7xl">
                             Welcome to my portfolio
                         </h1>
-                        <p className="drop-shadow-md mt-6 text-lg  leading-tight text-pink">
+                        <p className="drop-shadow-md mt-6 text-lg  leading-tight text-pink text-center">
                             This is a test of 3D interactive website by Nesmanpro
                         </p>
                     </div>
@@ -29,7 +29,7 @@ const AboutMe = () => {
                             <h1 className="drop-shadow-md  pt-10 text-3xl sm:text-6xl font-bold tracking-normal text-pink text-center lg:text-7xl">
                                 Welcome to my portfolio
                             </h1>
-                            <p className="drop-shadow-md mt-6 text-lg  leading-tight text-pink">
+                            <p className="drop-shadow-md mt-6 text-lg  leading-tight text-pink text-center">
                                 This is a test of 3D interactive website by Nesmanpro
                             </p>
                         </div>
