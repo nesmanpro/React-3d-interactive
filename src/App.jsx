@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "./components/Header";
+import { Home } from "./components/Home";
 import { Bottle } from "./components/Bottle";
-import NavBar from "./components/NavBar";
 import AboutMe from "./components/AboutMe";
 
 
@@ -10,14 +9,16 @@ function App() {
 
   return (
     <BrowserRouter>
+      <div className="bg-arenaClaro min-h-screen">
 
-      <NavBar />
-      <Routes>
-        <Route exact path='/' element={<Header />} />
-        <Route exact path='/bottle' element={<Bottle />} />
-        <Route exact path='/aboutme' element={<AboutMe />} />
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/bottle' element={<Bottle />} />
+          <Route exact path='/aboutme' element={<AboutMe />} />
 
-      </Routes>
+        </Routes>
+      </div>
+
 
     </BrowserRouter>
   )

@@ -1,18 +1,43 @@
-import img from '../assets/logo/logo.svg';
+import Logo from '../assets/logo/logo.svg';
 import { Link } from 'react-router-dom';
+
+const esMobile = window.innerWidth <= 640;
 
 function NavBar() {
     return (
-        <div className='flex justify-around items-center relative z-10 drop-shadow-xl mt-3 mb-3'>
-            <img src={img} alt="" className='size-16 transition-all ease-in-out hover:scale-105 duration-150' />
-            <ul className='h-full flex gap-7 font-bold text-black cursor-pointer '>
-                <li className="hover:text-pink-700 transition-all ease-in-out duration-300"><Link to="/">Home</Link>
-                </li>
-                <Link to="/bottle" className="hover:text-pink-700">Bottle</Link>
-                <Link to="/aboutme" className="hover:text-pink-700">About Me</Link>
-                <li className="hover:text-pink-700">Contact</li>
-            </ul>
-        </div>
+        <section className='flex justify-between items-center pt-5 drop-shadow-xl mt-3 mb-3 max-w-6xl'>
+
+            {esMobile ?
+
+                <nav>
+                    <Link to="/">
+                        <img className='size-16 transition-all ease-in-out hover:scale-105 duration-150' src={Logo} alt="Logo nesmanpro web development agency" />
+                    </Link>
+                </nav>
+                :
+
+                <nav>
+                    <Link to="/">
+                        <img className='size-16 transition-all ease-in-out hover:scale-105 duration-150' src={Logo} alt="Logo nesmanpro web development agency" />
+                    </Link>
+                </nav>
+
+            }
+
+            <nav>
+
+                <ul className='drop-shadow-md flex text-xs sm:text-base gap-2 sm:gap-5 font-sans font-bold text-arenaClaro'>
+                    <li className="navlink"><Link to="/">Home</Link>
+                    </li>
+                    <Link to="/bottle" className="navlink">Bottle</Link>
+                    <Link to="/aboutme" className="navlink">About Me</Link>
+                    <li className="navlink">Contact</li>
+
+                </ul>
+
+
+            </nav>
+        </section>
     )
 }
 
