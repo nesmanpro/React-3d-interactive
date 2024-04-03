@@ -3,7 +3,7 @@ import Spline from '@splinetool/react-spline';
 
 const AboutMe = () => {
     return (
-        <div className='flex justify-center align-middle bg-[#f2f2f2] min-h-screen'>
+        <div className='flex justify-center align-middle bg-[#E5E9F6] min-h-screen'>
             {/* <div className=' absolute z-10'>
                 <h1 className=''>Hola</h1>
                 <p>Ésto es un a prueba de programacion y 3d interactiva</p>
